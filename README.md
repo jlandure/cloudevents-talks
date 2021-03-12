@@ -77,11 +77,12 @@ gcloud eventarc triggers list
 
 ## Local test
 
-````
+```
 npm start
 # Demo for CloudEvents Up and Runnning 🚀
 curl localhost:8080 -p -X POST -H "ce-subject:test"
 # ✨ Detected change in Cloud Storage bucket: test
+```
 
 ## Quickstart
 
@@ -93,7 +94,7 @@ gcloud builds submit \
 gcloud run deploy $MY_RUN_SERVICE \
   --image gcr.io/$(gcloud config get-value project)/$MY_RUN_CONTAINER \
   --allow-unauthenticated
-````
+```
 
 Create a _single region_ Cloud Storage bucket:
 
